@@ -1,3 +1,3 @@
-module github.com/Jathon-yang/go-wxsqlite3
+module github.com/go-gosh/go-wxsqlite3
 
 go 1.12

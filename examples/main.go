@@ -6,7 +6,8 @@ import (
 	"log"
 	"net/url"
 	"os"
-	_ "github.com/Jathon-yang/go-wxsqlite3"
+
+	_ "github.com/go-gosh/go-wxsqlite3"
 )
 
 func main() {
@@ -15,7 +16,6 @@ func main() {
 	key := url.QueryEscape("123456")
 	dbname := fmt.Sprintf("./foo.db?_db_key=%s", key)
 	db, err := sql.Open("sqlite3", dbname)
-
 
 	//db, err := sql.Open("sqlite3", "./foo.db")
 	if err != nil {
